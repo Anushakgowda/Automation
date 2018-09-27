@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Data:UserName]]>
+    </line>
+    <line>
+      <![CDATA[Row:1]]>
+    </line>
+    <line>
+      <![CDATA[p:./photo/Thu Sep 27 12_14_12 IST 2018.png]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15747" started-at="2018-09-27T06:43:59Z" finished-at="2018-09-27T06:44:15Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15747" started-at="2018-09-27T06:43:59Z" finished-at="2018-09-27T06:44:15Z">
+      <class name="script.TestDemo">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestDemo@4667ae56]" name="openApplication" is-config="true" duration-ms="12326" started-at="2018-09-27T06:43:59Z" finished-at="2018-09-27T06:44:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestDemo@4667ae56]" name="testA" duration-ms="1086" started-at="2018-09-27T06:44:11Z" finished-at="2018-09-27T06:44:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Data:UserName]]>
+            </line>
+            <line>
+              <![CDATA[Row:1]]>
+            </line>
+            <line>
+              <![CDATA[p:./photo/Thu Sep 27 12_14_12 IST 2018.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:script.TestDemo@4667ae56]" name="closeApplication" is-config="true" duration-ms="2310" started-at="2018-09-27T06:44:12Z" finished-at="2018-09-27T06:44:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.TestDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
