@@ -4,7 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Result implements ITestListener,IAutoConstant{
+public class Result  implements ITestListener,IAutoConstant{
   int passcount,failcount;
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -23,6 +23,9 @@ public class Result implements ITestListener,IAutoConstant{
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		failcount++;
+			
+		
+		
 	}
 
 	@Override

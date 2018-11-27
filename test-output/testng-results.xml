@@ -1,43 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[Data:UserName]]>
-    </line>
-    <line>
-      <![CDATA[Row:1]]>
-    </line>
-    <line>
-      <![CDATA[p:./photo/Thu Sep 27 12_14_12 IST 2018.png]]>
+      <![CDATA[test:testis failed& phpotois:./photo/Sat Oct 20 08_10_18 IST 2018.png]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15747" started-at="2018-09-27T06:43:59Z" finished-at="2018-09-27T06:44:15Z">
+  <suite name="Default suite" duration-ms="23548" started-at="2018-10-20T02:39:55Z" finished-at="2018-10-20T02:40:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15747" started-at="2018-09-27T06:43:59Z" finished-at="2018-09-27T06:44:15Z">
-      <class name="script.TestDemo">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestDemo@4667ae56]" name="openApplication" is-config="true" duration-ms="12326" started-at="2018-09-27T06:43:59Z" finished-at="2018-09-27T06:44:11Z">
+    <test name="Default test" duration-ms="23548" started-at="2018-10-20T02:39:55Z" finished-at="2018-10-20T02:40:19Z">
+      <class name="script.PumaTest">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.PumaTest@467aecef]" name="openApplication" is-config="true" duration-ms="22302" started-at="2018-10-20T02:39:55Z" finished-at="2018-10-20T02:40:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestDemo@4667ae56]" name="testA" duration-ms="1086" started-at="2018-09-27T06:44:11Z" finished-at="2018-09-27T06:44:12Z">
+        <test-method status="FAIL" signature="test()[pri:0, instance:script.PumaTest@467aecef]" name="test" duration-ms="76" started-at="2018-10-20T02:40:18Z" finished-at="2018-10-20T02:40:18Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:882)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:68)
+at page.pumaPage.getMenu(pumaPage.java:25)
+at script.PumaTest.test(PumaTest.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-            <line>
-              <![CDATA[Data:UserName]]>
-            </line>
-            <line>
-              <![CDATA[Row:1]]>
-            </line>
-            <line>
-              <![CDATA[p:./photo/Thu Sep 27 12_14_12 IST 2018.png]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:script.TestDemo@4667ae56]" name="closeApplication" is-config="true" duration-ms="2310" started-at="2018-09-27T06:44:12Z" finished-at="2018-09-27T06:44:15Z">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.PumaTest@467aecef]" name="closeApplication" is-config="true" duration-ms="1142" started-at="2018-10-20T02:40:18Z" finished-at="2018-10-20T02:40:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=FAILURE method=PumaTest.test()[pri:0, instance:script.PumaTest@467aecef] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[test:testis failed& phpotois:./photo/Sat Oct 20 08_10_18 IST 2018.png]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- script.TestDemo -->
+      </class> <!-- script.PumaTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

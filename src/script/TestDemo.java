@@ -1,10 +1,12 @@
 package script;
 
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
 import generic.Utility;
+import page.LoginPage;
 
 public class TestDemo extends BaseTest
 {
@@ -17,8 +19,8 @@ public class TestDemo extends BaseTest
 		int r=Utility.getXlRowCount(INPUT_PATH, "sheet1");
 		Reporter.log("Row:"+r,true);
 		
-		String p=Utility.getPhoto(driver, PHOTO_PATH);
-		Reporter.log("p:"+p,true);
+		
+		
 	}
 
 }
